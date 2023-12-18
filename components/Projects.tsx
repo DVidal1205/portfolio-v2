@@ -1,6 +1,5 @@
 import React from "react";
 import Project from "./Project";
-import { start } from "repl";
 
 function Projects() {
     return (
@@ -33,7 +32,7 @@ function Projects() {
                         "LangChain",
                         "Inno Installer",
                     ]}
-                    date={{ start: "October 6", end: "October 8" }}
+                    date={{ start: "October 6, 2023", end: "October 8, 2023" }}
                 ></Project>
                 <Project
                     name={"UCF Activities Bot"}
@@ -41,17 +40,81 @@ function Projects() {
                         "An Event bot for the University of Central Florida Official Discord Server"
                     }
                     longDescription={
-                        "Created a Discord Bot using Python that executes a daily web-scraping process of the Campus Event Board website using Selenium and embeds the events in a designated channel. Deployed to an official campus discord server with 1000+ members interacting with the bot and hosted on a Raspberry Pi to ensure 24-hour uptime. This project taught me a lot about web-scraping, and how to use Selenium to automate the process. I also learned how to use the Nextcord API to create a Discord Bot, and how to host a bot on a Raspberry Pi."
+                        "Created a Discord Bot using Python that executes a daily web-scraping process of the Campus Event Board website using Selenium and embeds the events in a designated channel. Deployed to an official campus discord server with 1000+ members interacting with the bot, hosted on a Raspberry Pi to ensure 24-hour uptime. This project taught me a lot about web-scraping, and how to use Selenium to automate the process. I also learned how to use the Nextcord API to create a Discord Bot, and how to host a bot on a Raspberry Pi."
                     }
                     link={"https://github.com/DVidal1205/UCF27-Bot"}
                     image={"/bot.png"}
-                    tags={[
-                        "Python",
-                        "Nextcord",
-                        "Selenium",
-                        "Raspberry Pi",
-                    ]}
-                    date={{ start: "November 7", end: "November 12" }}
+                    tags={["Python", "Nextcord", "Selenium", "Raspberry Pi"]}
+                    date={{
+                        start: "November 7, 2023",
+                        end: "November 12, 2023",
+                    }}
+                ></Project>
+                <Project
+                    name={"Worlde Replica"}
+                    shortDescription={
+                        "A replacation of the popular game, Worlde, as a Desktop Application"
+                    }
+                    longDescription={
+                        "After being disatisfied with eyesore Command Line Interface applications, I decided to dive into the world of GUI development. I used the Qt Creator IDE to create a C++ application that replicated the popular game, Worlde. This project taught me a lot about UI development, design principles, and how to use the Qt Creator IDE. This project was my first project to make it out of the command line, which was a huge step for me as a developer."
+                    }
+                    link={
+                        "https://github.com/DVidal1205/Projects/tree/main/WordleQt"
+                    }
+                    image={"/wordle.jpg"}
+                    tags={["C++", "Qt Creator"]}
+                    date={{
+                        start: "September 18, 2023",
+                        end: "September 29, 2023",
+                    }}
+                ></Project>
+                <Project
+                    name={"NPC Generator"}
+                    shortDescription={
+                        "A Desktop Application that generates a pseudo-random NPC for Dungeons and Dragons"
+                    }
+                    longDescription={
+                        "I built this application for the Shellhacks 2023 Hackathon as a way to embrace my hobby of dungeons and dragons and be able to come up with a finished product. I built this project with the Tkinter library, which was an excellent learning experience of how NOT to use a GUI library. This project was a stepping stone to my journey through Qt Creator as I searched for a new GUI framework, and a baseline for Project Wildspace."
+                    }
+                    link={"https://github.com/DVidal1205/DNDTTK"}
+                    image={"/dndttk.jpg"}
+                    tags={["Python", "Tkinter"]}
+                    date={{
+                        start: "September 15, 2023",
+                        end: "September 29, 2023",
+                    }}
+                ></Project>
+                <Project
+                    name={"Tic-Tac-Toe AI"}
+                    shortDescription={
+                        "A CLI program to play against a Tic-Tac-Toe AI"
+                    }
+                    longDescription={
+                        "Developed a simple replica of the game TicTacToe, and integrated it with a minimax artificial intelligence algorithm. Utilizes object-oriented programming practices, as well as function recursion and two-dimensional array management. Written fully in Python."
+                    }
+                    link={"https://github.com/DVidal1205/Projects/tree/main/TicTacToe%20AI"}
+                    image={"/tictactoe.jpg"}
+                    tags={["Python"]}
+                    date={{
+                        start: "June 15, 2023",
+                        end: "June 25, 2023",
+                    }}
+                ></Project>
+                <Project
+                    name={"CactPot"}
+                    shortDescription={
+                        "A replica of the Final Fantasy XIV Cactpot Lottery Game"
+                    }
+                    longDescription={
+                        "Developed a low-tier replica of the CactPot gambling mini-game from the game Final Fantasy XIV. This was my final project for my first intro to C++ class, and utilizes beginner methods such as two-dimensional arrays, switch and if-else structues, random number engines, and function composition methods"
+                    }
+                    link={"https://github.com/DVidal1205/Projects/tree/main/Cactpot"}
+                    image={"/cactpot.jpg"}
+                    tags={["C++"]}
+                    date={{
+                        start: "November 15, 2022",
+                        end: "December 1, 2022",
+                    }}
                 ></Project>
             </ul>
         </div>

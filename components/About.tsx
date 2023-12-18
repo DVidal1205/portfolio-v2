@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 function About() {
     return (
         <div className="mb-20 px-6" id="about">
