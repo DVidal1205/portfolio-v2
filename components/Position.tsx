@@ -105,7 +105,7 @@ function Position({
 
     return (
         <>
-            <li className="p-4 bg-gradient-to-tl from-purple-950 via-purple-800 to-violet-950 transition-transform hover:-translate-y-2 bg-transparent backdrop-blur-xl mshadow-md drop-shadow-2xl border-2 border-violet-900 rounded-2xl flex flex-col">
+            <li className="p-4 bg-gradient-to-tl from-purple-950 via-purple-800 to-violet-950 bg-transparent backdrop-blur-xl mshadow-md drop-shadow-2xl border-2 border-violet-900 rounded-2xl transition-transform hover:-translate-y-2  flex flex-col">
                 <div className="flex items-center space-x-2">
                     <div className="text-xl font-bold">{title}</div>
                     <div className="text-xl">- {company}</div>
@@ -123,7 +123,7 @@ function Position({
                     </a>
                 </div>
                 <div className="text-xl italic mb-2">
-                    {date.start}-{date.end}
+                    {date.start} - {date.end}
                 </div>
                 <div className="text-xl">{description}</div>
             </li>

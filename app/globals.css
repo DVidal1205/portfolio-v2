@@ -13,3 +13,16 @@ body {
   background: radial-gradient(circle, #1a053a, #2e0854);
 }
 
+/* globals.css */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: 5s marquee infinite linear;
+}

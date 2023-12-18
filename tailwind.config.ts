@@ -35,7 +35,7 @@ const config: Config = {
       },
       animation: {
         'fade-in-down': 'fade-in-down 0.5s ease-out',
-        'fade-out-up': 'fade-out-up 0.5s ease-out forwards', 
+        'fade-out-up': 'fade-out-up 0.5s ease-out forwards',
       },
     }, 
   },
