@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
     return (
-        <nav className="fixed top-0 flex w-full items-center overflow-hidden px-8 transition-all ease-in-out h-16 shadow-md backdrop-brightness-110 backdrop-blur-3xl">
+        <nav className="fixed top-0 flex w-full items-center overflow-hidden px-8 transition-all ease-in-out h-16 shadow-md backdrop-brightness-110 backdrop-blur-3xl z-30">
             <div className="flex-1 text-2xl nt-bold font-bold">Dylan Vidal</div>
             <ul className="hidden items-center md:flex">
                 <li className="px-4">
