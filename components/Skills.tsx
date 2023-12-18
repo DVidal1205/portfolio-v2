@@ -26,12 +26,15 @@ const skills = [
 ];
 
 function Skills() {
-    const [hoveredSkill, setHoveredSkill] = useState(null);
+    const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
 
     return (
         <div className="mb-20 px-6" id="skills">
             <div className="text-3xl font-bold pt-24">Skills</div>
-            <p className="my-2 mb-6">A collection of some of the technologies I have worked with. Hover for more details.</p>
+            <p className="my-2 mb-6">
+                A collection of some of the technologies I have worked with.
+                Hover for more details.
+            </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-6">
                 {skills.map((skill, index) => (
                     <div
