@@ -41,7 +41,7 @@ function Welcome() {
                             repeat={Infinity}
                         />
                     </div>
-                    <div className="flex flex-wrap gap-4">
+                    <div className="flex flex-wrap gap-4 mt-10">
                         <a
                             href="/resume.pdf"
                             className="mb-2 md:text-1xl lg:text-2xl xl:text-3xl bg-purple-800 font-semibold text-1xl px-6 py-2 my-2 rounded-xl border border-purple-950 transition-transform hover:-translate-y-1 hover:bg-purple-900 hover:text-violet-200"
