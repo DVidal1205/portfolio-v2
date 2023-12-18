@@ -51,12 +51,12 @@ function Projects() {
                     }}
                 ></Project>
                 <Project
-                    name={"Worlde Replica"}
+                    name={"Wordle Replica"}
                     shortDescription={
-                        "A replacation of the popular game, Worlde, as a Desktop Application"
+                        "A replacation of the popular game, Wordle, as a Desktop Application"
                     }
                     longDescription={
-                        "After being disatisfied with eyesore Command Line Interface applications, I decided to dive into the world of GUI development. I used the Qt Creator IDE to create a C++ application that replicated the popular game, Worlde. This project taught me a lot about UI development, design principles, and how to use the Qt Creator IDE. This project was my first project to make it out of the command line, which was a huge step for me as a developer."
+                        "After being disatisfied with eyesore Command Line Interface applications, I decided to dive into the world of GUI development. I used the Qt Creator IDE to create a C++ application that replicated the popular game, Wordle. This project taught me a lot about UI development, design principles, and how to use the Qt Creator IDE. This project was my first project to make it out of the command line, which felt like a huge step for me as a developer."
                     }
                     link={
                         "https://github.com/DVidal1205/Projects/tree/main/WordleQt"
@@ -66,6 +66,22 @@ function Projects() {
                     date={{
                         start: "September 18, 2023",
                         end: "September 29, 2023",
+                    }}
+                ></Project>
+                <Project
+                    name={"Portfolio V1"}
+                    shortDescription={
+                        "The first iteration of my personal portfolio website."
+                    }
+                    longDescription={
+                        "After my first few months of learning Computer Science, I learned of the standard of having a personal portfolio. Over the following 5 months, I learned HTML, CSS, and JavaScript essentials off of LinkedIn Learning, which was provided by my community college. This website was my first real project, and I learned a lot about web development and design principles. This website was a stepping stone to my current portfolio, and I am proud of the work I put into it over the following months."
+                    }
+                    link={"https://dvidal1205.github.io"}
+                    image={"/portfoliov1.png"}
+                    tags={["HTML", "CSS", "JavaScript"]}
+                    date={{
+                        start: "May 5, 2022",
+                        end: "December 18, 2023",
                     }}
                 ></Project>
                 <Project
@@ -92,28 +108,14 @@ function Projects() {
                     longDescription={
                         "Developed a simple replica of the game TicTacToe, and integrated it with a minimax artificial intelligence algorithm. Utilizes object-oriented programming practices, as well as function recursion and two-dimensional array management. Written fully in Python."
                     }
-                    link={"https://github.com/DVidal1205/Projects/tree/main/TicTacToe%20AI"}
+                    link={
+                        "https://github.com/DVidal1205/Projects/tree/main/TicTacToe%20AI"
+                    }
                     image={"/tictactoe.jpg"}
                     tags={["Python"]}
                     date={{
                         start: "June 15, 2023",
                         end: "June 25, 2023",
-                    }}
-                ></Project>
-                <Project
-                    name={"CactPot"}
-                    shortDescription={
-                        "A replica of the Final Fantasy XIV Cactpot Lottery Game"
-                    }
-                    longDescription={
-                        "Developed a low-tier replica of the CactPot gambling mini-game from the game Final Fantasy XIV. This was my final project for my first intro to C++ class, and utilizes beginner methods such as two-dimensional arrays, switch and if-else structues, random number engines, and function composition methods"
-                    }
-                    link={"https://github.com/DVidal1205/Projects/tree/main/Cactpot"}
-                    image={"/cactpot.jpg"}
-                    tags={["C++"]}
-                    date={{
-                        start: "November 15, 2022",
-                        end: "December 1, 2022",
                     }}
                 ></Project>
             </ul>
