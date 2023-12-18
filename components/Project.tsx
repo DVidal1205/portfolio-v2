@@ -113,7 +113,6 @@ function Project({
                             <a
                                 className="hover:text-violet-400"
                                 onClick={openModal}
-                                aria-label="View Project"
                             >
                                 <svg
                                     className="fill-white hover:fill-violet-400 mx-2"
