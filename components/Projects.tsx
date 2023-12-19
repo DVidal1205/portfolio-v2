@@ -76,7 +76,7 @@ function Projects() {
                     longDescription={
                         "After my first few months of learning Computer Science, I learned of the standard of having a personal portfolio. Over the following 5 months, I learned HTML, CSS, and JavaScript essentials off of LinkedIn Learning, which was provided by my community college. This website was my first real project, and I learned a lot about web development and design principles. This website was a stepping stone to my current portfolio, and I am proud of the work I put into it over the following months."
                     }
-                    link={"https://dvidal1205.github.io"}
+                    link={"https://github.com/DVidal1205/DVidal1205.github.io"}
                     image={"/portfoliov1.png"}
                     tags={["HTML", "CSS", "JavaScript"]}
                     date={{

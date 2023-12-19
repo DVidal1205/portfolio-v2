@@ -53,7 +53,8 @@ const PositionModal = ({
                     <ul>
                         {contributions.map((contribution, index) => (
                             <li key={index} className="mb-2">
-                                <span className="mr-2">&#8226;</span> {contribution}
+                                <span className="mr-2">&#8226;</span>{" "}
+                                {contribution}
                             </li>
                         ))}
                     </ul>
@@ -84,11 +85,14 @@ function Position({
     useEffect(() => {
         if (isModalOpen) {
             document.body.style.overflow = "hidden";
-            setModalAnimation("animate-fade-in-down");
         } else {
             document.body.style.overflow = "";
-            setModalAnimation("animate-fade-out-up");
         }
+
+        // Cleanup function to reset overflow when component unmounts
+        return () => {
+            document.body.style.overflow = "";
+        };
     }, [isModalOpen]);
 
     const openModal = () => {
@@ -97,11 +101,19 @@ function Position({
 
     const closeModal = () => {
         setModalAnimation("animate-fade-out-up");
+        // Wait for the animation to complete before hiding the modal
         setTimeout(() => {
             setIsModalOpen(false);
-            setModalAnimation("");
-        }, 500);
+        }, 500); // this should match the duration of the fade-out animation
     };
+
+    // When you set the modal to close, after the timeout you should reset the animation state
+    useEffect(() => {
+        if (!isModalOpen) {
+            // This will reset the animation back to 'fade in' for the next time it opens
+            setModalAnimation("animate-fade-in-down");
+        }
+    }, [isModalOpen]);
 
     return (
         <>
@@ -128,14 +140,19 @@ function Position({
                 <div className="text-xl">{description}</div>
             </li>
             {isModalOpen && (
-                <PositionModal
-                    title={title}
-                    company={company}
-                    description={description}
-                    contributions={contributions}
-                    image={image}
-                    onClose={closeModal}
-                />
+                <div
+                    className={`fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex justify-center items-center z-10 ${modalAnimation}`}
+                    style={{ transition: "opacity .5s ease-out" }}
+                >
+                    <PositionModal
+                        title={title}
+                        company={company}
+                        description={description}
+                        contributions={contributions}
+                        image={image}
+                        onClose={closeModal}
+                    />
+                </div>
             )}
         </>
     );

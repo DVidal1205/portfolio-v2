@@ -31,7 +31,7 @@ function Skills() {
     return (
         <div className="mb-20 px-6" id="skills">
             <div className="text-3xl font-bold pt-24">Skills</div>
-            <p className="my-2 mb-6">
+            <p className="my-2 mb-8">
                 A collection of some of the technologies I have worked with.
                 Hover for more details.
             </p>
@@ -48,13 +48,25 @@ function Skills() {
                             height={100}
                             src={skill.svg}
                             alt={skill.name}
-                            className="transition-all duration-300 ease-in-out transform"
+                            className="transition-transform duration-300 ease-in-out transform hover:scale-110"
                         />
-                        {hoveredSkill === skill.name && (
-                            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-tl from-purple-950 via-purple-800 to-violet-950 bg-transparent backdrop-blur-xl mshadow-md drop-shadow-2xl border-2 border-violet-900 rounded-2xl opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out text-xl scale-50 hover:scale-100 cursor-default">
-                                {skill.name}
-                            </div>
-                        )}
+                        <div
+                            className={`absolute inset-0 flex items-center justify-center 
+                         bg-gradient-to-tl from-purple-950 via-purple-800 to-violet-950 
+                         bg-transparent backdrop-blur-xl mshadow-md drop-shadow-2xl 
+                         border-2 border-violet-900 rounded-2xl 
+                         transition-opacity duration-300 ease-linear 
+                         ${
+                             hoveredSkill === skill.name
+                                 ? "opacity-100"
+                                 : "opacity-0"
+                         } 
+                         cursor-default`}
+                        >
+                            {hoveredSkill === skill.name && (
+                                <span className="text-xl">{skill.name}</span>
+                            )}
+                        </div>
                     </div>
                 ))}
             </div>
