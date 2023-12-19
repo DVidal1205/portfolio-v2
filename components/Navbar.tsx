@@ -99,85 +99,88 @@ function Navbar() {
                 </ul>
             </nav>
             <div className="md:hidden fixed bottom-0 flex w-full items-center overflow-hidden p-4 bg-gradient-to-tl from-purple-950 via-purple-800 to-violet-950 transition-transform bg-transparent backdrop-blur-xl mshadow-md drop-shadow-2xl border-2 border-violet-900 z-30">
-                <a href="#about" className="flex flex-col items-center">
+                <a href="#about" className="flex flex-col items-center mx-3">
                     <Image
                         width={100}
                         height={100}
                         src={"/about.svg"}
                         alt={"About Icon"}
-                        className="h-10 rounded-full"
+                        className="h-8"
                     />
                 </a>
-                <a href="#projects" className="flex flex-col items-center">
+                <a href="#projects" className="flex flex-col items-center mx-3">
                     <Image
                         width={100}
                         height={100}
                         src={"/project.svg"}
                         alt={"Projects Icon"}
-                        className="h-10 rounded-full"
+                        className="h-8"
                     />
                 </a>
-                <a href="#experience" className="flex flex-col items-center">
+                <a
+                    href="#experience"
+                    className="flex flex-col items-center mx-3"
+                >
                     <Image
                         width={100}
                         height={100}
                         src={"/experience.svg"}
                         alt={"Experience Icon"}
-                        className="h-10 rounded-full"
+                        className="h-8"
                     />
                 </a>
-                <a
-                    href="#skills"
-                    className="flex flex-col items-center hover:to-purple-100"
-                >
+                <a href="#skills" className="flex flex-col items-center mx-3">
                     <Image
                         width={100}
                         height={100}
                         src={"/skills.svg"}
                         alt={"Skills Icon"}
-                        className="h-10 rounded-full"
+                        className="h-8"
                     />
                 </a>
-                <a href="#education" className="flex flex-col items-center">
+                <a
+                    href="#education"
+                    className="flex flex-col items-center mx-3"
+                >
                     <Image
                         width={100}
                         height={100}
                         src={"/education.svg"}
                         alt={"Education Icon"}
-                        className="h-10 rounded-full"
+                        className="h-8"
                     />
                 </a>
-                <a href="#contact" className="flex flex-col items-center">
+                <a href="#contact" className="flex flex-col items-center mx-3">
                     <Image
                         width={100}
                         height={100}
                         src={"/contact.svg"}
                         alt={"Contact Icon"}
-                        className="h-10 rounded-full"
+                        className="h-8"
                     />
                 </a>
                 <a
                     href="https://github.com/DVidal1205"
-                    className="flex flex-col items-center"
+                    className="flex flex-col items-center mx-3"
                 >
                     <Image
                         width={100}
                         height={100}
                         src={"/github.svg"}
                         alt={"Github Icon"}
-                        className="h-10 rounded-full"
+                        className="h-8"
                     />
                 </a>
                 <a
                     href="https://www.linkedin.com/in/dylanvidal1204/"
-                    className="flex flex-col items-center"
+                    className="flex flex-col items-center mx-3"
                 >
                     <Image
                         width={100}
                         height={100}
                         src={"/linkedin.svg"}
                         alt={"LinkedIn Icon"}
-                        className="h-10 rounded-full"
+                        className="h-8"
                     />
                 </a>
             </div>
