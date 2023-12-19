@@ -4,7 +4,7 @@ function Contact() {
     return (
         <div className="mt-52 mb-52 max-w-2xl mx-auto" id="contact">
             <h2 className="text-4xl font-bold mb-4 text-center">Get In Touch</h2>
-            <p className="text-center">
+            <p className="text-center px-4">
                 If you have any questions or want to get in touch, feel free to
                 drop me an email! I&apos;ll try to get back to you as soon as I
                 can.

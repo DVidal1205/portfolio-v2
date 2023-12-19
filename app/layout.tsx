@@ -6,8 +6,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Dylan Vidal",
-    description: "A portfolio for Dylan Vidal, an aspiring software engineer.",
+    description: "Resume and Portfolio for Dylan Vidal, an Aspiring Software Engineer",
     keywords: ["Developer", "Software Engineer", "Portfolio", "Dylan Vidal"],
+    icons: ["icons8-tarot-cards-doodle-32.png"],
     generator: "Next.js",
 };
 
