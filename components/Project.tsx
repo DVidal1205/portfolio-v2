@@ -35,7 +35,14 @@ const ProjectModal = ({
             style={{ transition: "transform .5s ease-out" }}
         >
             <div
-                className="bg-white rounded-lg p-5 mx-2 my-8 max-w-lg w-full animate-fade-in-down"
+                className="bg-white p-6 rounded-lg shadow-md m-4
+                mx-auto mt-24
+                max-w-xl w-full
+                sm:max-w-md sm:w-3/4
+                md:max-w-lg md:w-1/2
+                lg:max-w-xl lg:w-1/3
+                xl:max-w-2xl
+                animate-fade-in-down"
                 style={{ transition: "transform .5s ease-out" }}
             >
                 <div className="mb-4 text-gray-900 break-words">

@@ -36,7 +36,14 @@ const PositionModal = ({
             style={{ transition: "opacity .5s ease-out" }}
         >
             <div
-                className="bg-white rounded-lg p-5 mx-2 my-8 max-w-lg w-full animate-fade-in-down"
+                className="bg-white p-6 rounded-lg shadow-md m-4
+                mx-auto mt-24
+                max-w-xl w-full
+                sm:max-w-md sm:w-3/4
+                md:max-w-lg md:w-1/2
+                lg:max-w-xl lg:w-1/3
+                xl:max-w-2xl
+                animate-fade-in-down"
                 style={{ transition: "opacity .5s ease-out" }}
             >
                 <div className="mb-4 text-gray-900 break-words">
@@ -118,7 +125,7 @@ function Position({
     return (
         <>
             <li className="p-4 bg-gradient-to-tl from-purple-950 via-purple-800 to-violet-950 bg-transparent backdrop-blur-xl mshadow-md drop-shadow-2xl border-2 border-violet-900 rounded-2xl transition-transform hover:-translate-y-2  flex flex-col">
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-2 flex-wrap">
                     <div className="text-xl font-bold">{title}</div>
                     <div className="text-xl">- {company}</div>
                     <a className="hover:text-violet-400" onClick={openModal}>

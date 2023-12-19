@@ -37,7 +37,7 @@ function EducationItem({
 
     return (
         <div className="my-5 p-4 bg-gradient-to-tl from-purple-950 via-purple-800 to-violet-950 bg-transparent backdrop-blur-xl mshadow-md drop-shadow-2xl border-2 border-violet-900 rounded-2xl">
-            <div className="flex justify-between items-center p-4 rounded-lg">
+            <div className="flex justify-between items-center p-4 rounded-lg flex-wrap">
                 {image && (
                     <div className="flex-shrink-0">
                         <Image

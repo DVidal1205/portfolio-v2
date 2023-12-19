@@ -34,10 +34,10 @@ function Education() {
             date={{ start: "August 2021", end: "May 2023" }}
             location={"Davie, FL"}
             image="/bc.png"
-            shortDescription="I have completed my Associate Degree in Computer Science through Dual Enrollment at Broward College."
+            shortDescription="I have completed my Associate Degree in Computer Science through Dual Enrollment at BC."
             longDescription="Broward College is where I discovered my love for Computer Science and Programming, and is what sent me down the path of academic excellence I walk today. I completed 78 credits at Broward College entirely through dual-enrollment, which made me prepared for full-time university academics."></EducationItem>
             <EducationItem
-            school={"Collage Academy"}
+            school={"College Academy"}
             degree={"High School Diploma"}
             courses={["Calculus 1", "Calculus 2", "Physics 1", "Intro to Programming with C++", "Intermediate Programming with C++", "Intro to Programming with Python"]}
             extracurriculars={["National Honors Society Historian", "Dungeons and Dragons Committee Founder"]}
