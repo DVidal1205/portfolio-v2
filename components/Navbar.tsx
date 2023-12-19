@@ -98,7 +98,7 @@ function Navbar() {
                     </li>
                 </ul>
             </nav>
-            <div className="md:hidden fixed bottom-0 flex w-full items-center overflow-hidden p-4 bg-gradient-to-tl from-purple-950 via-purple-800 to-violet-950 transition-transform hover:-translate-y-2 bg-transparent backdrop-blur-xl mshadow-md drop-shadow-2xl border-2 border-violet-900 z-30">
+            <div className="md:hidden fixed bottom-0 flex w-full items-center overflow-hidden p-4 bg-gradient-to-tl from-purple-950 via-purple-800 to-violet-950 transition-transform bg-transparent backdrop-blur-xl mshadow-md drop-shadow-2xl border-2 border-violet-900 z-30">
                 <a href="#about" className="flex flex-col items-center">
                     <Image
                         width={100}
