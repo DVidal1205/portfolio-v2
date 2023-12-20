@@ -21,7 +21,7 @@ const skills = [
     { name: "Next.js", svg: "/next.svg" },
     { name: "Vercel", svg: "/vercel.svg" },
     { name: "Git", svg: "/git.svg" },
-    { name: "GitHub", svg: "/github.svg" },
+    { name: "GitHub", svg: "/github-mark.svg" },
     { name: "VS Code", svg: "/vscode.svg" },
 ];
 
@@ -35,7 +35,7 @@ function Skills() {
                 A collection of some of the technologies I have worked with.
                 Hover for more details.
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 mt-6">
                 {skills.map((skill, index) => (
                     <div
                         key={index}

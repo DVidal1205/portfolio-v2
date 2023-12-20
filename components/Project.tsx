@@ -31,8 +31,9 @@ const ProjectModal = ({
 }) => {
     return (
         <div
-            className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex justify-center items-center z-10"
+            className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex justify-center items-center z-10 cursor-pointer"
             style={{ transition: "transform .5s ease-out" }}
+            onClick={onClose}
         >
             <div
                 className="bg-white p-6 rounded-lg shadow-md m-4
@@ -112,7 +113,10 @@ function Project({
 
     return (
         <>
-            <li className="p-4 bg-gradient-to-tl from-purple-950 via-purple-800 to-violet-950 transition-transform hover:-translate-y-2 bg-transparent backdrop-blur-xl mshadow-md drop-shadow-2xl border-2 border-violet-900 rounded-2xl">
+            <li
+                className="cursor-pointer p-4 bg-gradient-to-tl from-purple-950 via-purple-800 to-violet-950 transition-transform hover:-translate-y-2 bg-transparent backdrop-blur-xl mshadow-md drop-shadow-2xl border-2 border-violet-900 rounded-2xl"
+                onClick={openModal}
+            >
                 <div>
                     <div className="flex">
                         <p className="text-2xl font-semibold">{name}</p>

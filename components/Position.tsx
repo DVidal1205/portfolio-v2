@@ -32,8 +32,9 @@ const PositionModal = ({
 }) => {
     return (
         <div
-            className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex justify-center items-center z-10"
+            className="cursor-pointer fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex justify-center items-center z-10"
             style={{ transition: "opacity .5s ease-out" }}
+            onClick={onClose}
         >
             <div
                 className="bg-white p-6 rounded-lg shadow-md m-4
@@ -55,7 +56,7 @@ const PositionModal = ({
                         width={250}
                         height={250}
                         alt={`${company} Image`}
-                        className="rounded-md drop-shadow-xl my-4 mx-auto"
+                        className="rounded-md drop-shadow-xl my-4 mx-auto h-48 w-auto"
                     ></Image>
                     <ul>
                         {contributions.map((contribution, index) => (
@@ -124,7 +125,10 @@ function Position({
 
     return (
         <>
-            <li className="p-4 bg-gradient-to-tl from-purple-950 via-purple-800 to-violet-950 bg-transparent backdrop-blur-xl mshadow-md drop-shadow-2xl border-2 border-violet-900 rounded-2xl transition-transform hover:-translate-y-2  flex flex-col">
+            <li
+                className="cursor-pointer p-4 bg-gradient-to-tl from-purple-950 via-purple-800 to-violet-950 bg-transparent backdrop-blur-xl mshadow-md drop-shadow-2xl border-2 border-violet-900 rounded-2xl transition-transform hover:-translate-y-2  flex flex-col"
+                onClick={openModal}
+            >
                 <div className="flex items-center space-x-2 flex-wrap">
                     <div className="text-xl font-bold">{title}</div>
                     <div className="text-xl">- {company}</div>
