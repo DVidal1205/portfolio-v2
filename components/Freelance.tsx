@@ -42,7 +42,7 @@ function Freelance({ name, shortDescription, image, link }: FreelanceProps) {
             width={1920}
             height={1080}
             alt={`${name} Image`}
-            className="rounded-md drop-shadow-xl my-4 h-96 w-auto mx-auto"
+            className="rounded-md drop-shadow-xl my-4 h-44 lg:h-96 xl:h-96 w-auto mx-auto aspect-video"
           ></Image>
         </div>
       </li>

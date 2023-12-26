@@ -20,6 +20,13 @@ function Navbar() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, [prevScrollPos, visible]);
 
+    const handleSmoothScroll = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <>
             <nav
@@ -31,32 +38,50 @@ function Navbar() {
                 </div>
                 <ul className="hidden items-center md:flex">
                     <li className="px-4">
-                        <a className="hover:text-violet-400" href="#about">
+                        <a
+                            className="hover:text-violet-400"
+                            onClick={() => handleSmoothScroll("about")}
+                        >
                             About
                         </a>
                     </li>
                     <li className="px-4">
-                        <a className="hover:text-violet-400" href="#projects">
+                        <a
+                            className="hover:text-violet-400"
+                            onClick={() => handleSmoothScroll("projects")}
+                        >
                             Projects
                         </a>
                     </li>
                     <li className="px-4">
-                        <a className="hover:text-violet-400" href="#experience">
+                        <a
+                            className="hover:text-violet-400"
+                            onClick={() => handleSmoothScroll("experience")}
+                        >
                             Experience
                         </a>
                     </li>
                     <li className="px-4">
-                        <a className="hover:text-violet-400" href="#skills">
+                        <a
+                            className="hover:text-violet-400"
+                            onClick={() => handleSmoothScroll("skills")}
+                        >
                             Skills
                         </a>
                     </li>
                     <li className="px-4">
-                        <a className="hover:text-violet-400" href="#education">
+                        <a
+                            className="hover:text-violet-400"
+                            onClick={() => handleSmoothScroll("education")}
+                        >
                             Education
                         </a>
                     </li>
                     <li className="px-4">
-                        <a className="hover:text-violet-400" href="#contact">
+                        <a
+                            className="hover:text-violet-400"
+                            onClick={() => handleSmoothScroll("contact")}
+                        >
                             Contact
                         </a>
                     </li>
@@ -99,7 +124,10 @@ function Navbar() {
                 </ul>
             </nav>
             <div className="md:hidden fixed bottom-0 flex w-full items-center overflow-hidden p-4 bg-purple-800 transition-transform mshadow-md drop-shadow-2xl border-2 border-black z-30">
-                <a href="#about" className="flex flex-col items-center mx-3">
+                <a
+                    onClick={() => handleSmoothScroll("about")}
+                    className="flex flex-col items-center mx-3"
+                >
                     <Image
                         width={100}
                         height={100}
@@ -108,7 +136,10 @@ function Navbar() {
                         className="h-8"
                     />
                 </a>
-                <a href="#projects" className="flex flex-col items-center mx-3">
+                <a
+                    onClick={() => handleSmoothScroll("projects")}
+                    className="flex flex-col items-center mx-3"
+                >
                     <Image
                         width={100}
                         height={100}
@@ -118,7 +149,7 @@ function Navbar() {
                     />
                 </a>
                 <a
-                    href="#experience"
+                    onClick={() => handleSmoothScroll("experience")}
                     className="flex flex-col items-center mx-3"
                 >
                     <Image
@@ -129,7 +160,10 @@ function Navbar() {
                         className="h-9"
                     />
                 </a>
-                <a href="#skills" className="flex flex-col items-center mx-3">
+                <a
+                    onClick={() => handleSmoothScroll("skills")}
+                    className="flex flex-col items-center mx-3"
+                >
                     <Image
                         width={100}
                         height={100}
@@ -139,7 +173,7 @@ function Navbar() {
                     />
                 </a>
                 <a
-                    href="#education"
+                    onClick={() => handleSmoothScroll("education")}
                     className="flex flex-col items-center mx-3"
                 >
                     <Image
@@ -150,7 +184,10 @@ function Navbar() {
                         className="h-9"
                     />
                 </a>
-                <a href="#contact" className="flex flex-col items-center mx-3">
+                <a
+                    onClick={() => handleSmoothScroll("contact")}
+                    className="flex flex-col items-center mx-3"
+                >
                     <Image
                         width={100}
                         height={100}
