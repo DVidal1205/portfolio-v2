@@ -28,8 +28,8 @@ function Navbar() {
   return (
     <>
       <nav
-        style={{ top: visible ? "0" : "-60px" }}
-        className="hidden fixed top-0 md:flex w-full items-center overflow-hidden px-8 transition-all ease-in-out h-16 shadow-md backdrop-brightness-110 backdrop-blur-3xl z-30"
+        style={{ top: visible ? "0" : "-80px" }}
+        className="hidden fixed top-0 md:flex w-full items-center duration-500 overflow-hidden px-8 transition-all ease-in-out h-16 shadow-md backdrop-brightness-110 backdrop-blur-3xl z-30"
       >
         <div className="flex-1 text-2xl nt-bold font-bold">Dylan Vidal</div>
         <ul className="hidden items-center md:flex">
