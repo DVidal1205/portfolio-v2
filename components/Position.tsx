@@ -152,7 +152,7 @@ function Position({
           {tags.map((tag, index) => (
             <div
               key={index}
-              className="m-1 bg-purple-950 p-1 rounded-md drop-shadow-md italic"
+              className="m-1 bg-purple-950 p-1 rounded-md drop-shadow-md italic mt-2"
             >
               {tag}
             </div>
