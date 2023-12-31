@@ -15,7 +15,7 @@ function Freelance({ name, shortDescription, image, link }: FreelanceProps) {
   return (
     <>
       <li
-        className="cursor-pointer p-4 bg-gradient-to-tl from-purple-950 via-purple-800 to-violet-950 transition-transform hover:-translate-y-2 bg-transparent backdrop-blur-xl mshadow-md drop-shadow-2xl border-2 border-violet-900 rounded-2xl"
+        className="cursor-pointer p-4 bg-gradient-to-tl from-purple-950 via-purple-800 to-violet-950 transition-transform hover:-translate-y-2 bg-transparent backdrop-blur-xl mshadow-md drop-shadow-2xl border-2 border-violet-900 rounded-2xl my-3"
         onClick={handleClick}
       >
         <div>
@@ -42,7 +42,7 @@ function Freelance({ name, shortDescription, image, link }: FreelanceProps) {
             width={1920}
             height={1080}
             alt={`${name} Image`}
-            className="rounded-md drop-shadow-xl my-4 h-44 lg:h-96 xl:h-96 w-auto mx-auto aspect-video"
+            className="rounded-md drop-shadow-xl my-4 h-44 lg:h-96 xl:h-96 w-auto mx-auto aspect-auto"
           ></Image>
         </div>
       </li>

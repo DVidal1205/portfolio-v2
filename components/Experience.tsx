@@ -70,6 +70,12 @@ function Experience() {
           link="https://www.veckysbakery.com"
           image="/veckysbakery.png"
         ></Freelance>
+        <Freelance
+          name="South Florida Rides LLC"
+          shortDescription="A vehicle booking company on the Turo car share platform."
+          link="https://www.southflarides.com"
+          image="/southflarides.png"
+        ></Freelance>
       </ul>
     </div>
   );
