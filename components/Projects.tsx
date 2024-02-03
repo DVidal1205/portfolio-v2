@@ -17,9 +17,32 @@ function Projects() {
             </p>
             <ul className="grid auto-rows-fr grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
                 <Project
+                    name={"Project Wildspace Web"}
+                    shortDescription={
+                        "A SaaS AI Web Application to assist in fantasy world-building"
+                    }
+                    longDescription={
+                        "Project Wildspace Web was my attempt of migrating my hackathon project to the web. I knew I wanted to get involved with web-development, and after creating a few sites as a freelance developer, I decided to take on the full-stack challenge. It was a lot of fun, and it is everything I had imagined the initial project to be. I worked on this project solo, taking my initial idea and running with it. I learned a lot about web-development practicesi in the process, and I am extremely happy of the product."
+                    }
+                    link={"https://www.projectwildspace.tech"}
+                    image={"/wildspace.png"}
+                    tags={[
+                        "React",
+                        "TypeScript",
+                        "Next.js",
+                        "LangChain",
+                        "TailwindCSS",
+                        "Vercel",
+                        "tRPC",
+                        "Prisma",
+                        "mySQL",
+                    ]}
+                    date={{ start: "January 4, 2024", end: "Present" }}
+                ></Project>
+                <Project
                     name={"Project Wildspace"}
                     shortDescription={
-                        "A Generative AI Desktop Application to assist in Worldbuilding"
+                        "A Generative AI Desktop Application to assist in fantasy world-building"
                     }
                     longDescription={
                         "Project Wildspace was developed for the KnightHacks 2023 Hackathon by myself and two other developers. I led the project by assigning tasks to the three of us, coming up with sketches of the UI, and leading the implementation of the Langchain Artificial Intelligence interfacing. This project was a lot of fun, and my first time experiencing the software development process from start to finish: ideation, creation, and deployment. Since the Hackathon, we have accumulated over 65 downloads among players in the Dungeons and Dragons community! We have continued to develop this application post-Hackathon, with hopes of migrating Wildspace to the browser."
@@ -98,24 +121,6 @@ function Projects() {
                     date={{
                         start: "September 15, 2023",
                         end: "September 29, 2023",
-                    }}
-                ></Project>
-                <Project
-                    name={"Tic-Tac-Toe AI"}
-                    shortDescription={
-                        "A CLI program to play against a Tic-Tac-Toe AI"
-                    }
-                    longDescription={
-                        "Developed a simple replica of the game TicTacToe, and integrated it with a minimax artificial intelligence algorithm. Utilizes object-oriented programming practices, as well as function recursion and two-dimensional array management. Written fully in Python."
-                    }
-                    link={
-                        "https://github.com/DVidal1205/Projects/tree/main/TicTacToe%20AI"
-                    }
-                    image={"/tictactoe.jpg"}
-                    tags={["Python"]}
-                    date={{
-                        start: "June 15, 2023",
-                        end: "June 25, 2023",
                     }}
                 ></Project>
             </ul>

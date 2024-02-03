@@ -20,7 +20,7 @@ function Education() {
             school={"University of Central Florida"}
             degree={"Bachelor Degree"}
             courses={["Calculus 3", "Physics 2", "Intro to Programming with C", "Data Structures and Algorithms 1", "Object Oriented Programming", "Discrete Structures"]}
-            extracurriculars={["Burnett Honors College", "KnightHacks Software Development Club", "Competitive Programming Competitions"]}
+            extracurriculars={["Burnett Honors College", "KnightHacks Software Development Club", "Competitive Programming Competitions", "Research in the Cognitive Sciences Laboratory"]}
             date={{ start: "August 2023", end: "May 2027" }}
             location={"Orlando, FL"}
             image="/ucf.jpg"
