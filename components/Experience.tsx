@@ -24,7 +24,7 @@ function Experience() {
                         start: "January 31, 2024",
                         end: "Present",
                     }}
-                    description="Working with various businesses throughout Florida, I design, implement, and deploy websites catered towards my clients needs. Using React, Next, and Tailwind, I seek to deliver sleek user experiences in an effective manner."
+                    description="Partering with the Cognitive Sciences Laboratory at UCF, I am working on a research project studying the effectiveness of teamwork in software development and data analysis."
                     tags={[
                         "Research",
                         "Logistics",
@@ -70,7 +70,7 @@ function Experience() {
                         start: "June 8, 2021",
                         end: "August 10, 2022",
                     }}
-                    description="Working alongside another Lead Volunteer, I worked on many large-scale projects within the hospital in numerous departments: IT, Dietary Services, and Guest Relations. I also assisted in volunteer outreach and orchestrating large orientation sessions for incoming groups of volunteers."
+                    description="As Lead Volunteer, I worked on many large-scale projects within the hospital in numerous departments: IT, Dietary Services, and Guest Relations. I also assisted in volunteer outreach and orchestrating large orientation sessions for incoming groups of volunteers."
                     tags={[
                         "Leadership",
                         "Communication",
