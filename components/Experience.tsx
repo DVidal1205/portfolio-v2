@@ -24,7 +24,7 @@ function Experience() {
                         start: "January 31, 2024",
                         end: "Present",
                     }}
-                    description="Partering with the Cognitive Sciences Laboratory at UCF, I am working on a research project studying the effectiveness of teamwork in software development and data analysis."
+                    description="Partnering with the Cognitive Sciences Laboratory at UCF, I am working on a research project studying the effectiveness of teamwork in various environments, with a focus in software development and data analysis."
                     tags={[
                         "Research",
                         "Logistics",
