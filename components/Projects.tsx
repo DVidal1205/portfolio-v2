@@ -17,7 +17,31 @@ function Projects() {
             </p>
             <ul className="grid auto-rows-fr grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
                 <Project
-                    name={"Project Wildspace Web"}
+                    name={"Lootcode"}
+                    shortDescription={
+                        "A fantasy-themed coding game to teach Data Structures and Algorithms"
+                    }
+                    longDescription={
+                        "Lootcode is a gamefied rendition of interview-prep sites like Leetcode or Neetcode. After cramming coding problems for my own interviews, I was dissatisfied with the level of engagement the current solutions have, and thought to make something fun yet productive. Working with a team of 3 other developers for the KnightHacks Project Launch Program, we developed Lootcode over two months, creating our own codegrading pipeline, writing our own problems and cases, and ideating an entire fantasy world and storyline for maximum immersion. This project was so much fun, and I have learned a lot of DSA myself in developing it. We also plan on creating solution videos on a separate YouTube channel in the future to make the learning process even better."
+                    }
+                    link={"https://github.com/DVidal1205/lootcode"}
+                    image={"/lootcode.png"}
+                    tags={[
+                        "React",
+                        "TypeScript",
+                        "Next.js",
+                        "TailwindCSS",
+                        "tRPC",
+                        "Prisma",
+                        "mySQL",
+                        "Linux Server",
+                        "Docker",
+                        "Zx Shell",
+                    ]}
+                    date={{ start: "February 29, 2024", end: "Present" }}
+                ></Project>
+                <Project
+                    name={"Wildspace Web"}
                     shortDescription={
                         "A SaaS AI Web Application to assist in fantasy world-building"
                     }
@@ -107,7 +131,7 @@ function Projects() {
                         end: "December 18, 2023",
                     }}
                 ></Project>
-                <Project
+                {/* <Project
                     name={"NPC Generator"}
                     shortDescription={
                         "A Desktop Application that generates a pseudo-random NPC for Dungeons and Dragons"
@@ -122,7 +146,7 @@ function Projects() {
                         start: "September 15, 2023",
                         end: "September 29, 2023",
                     }}
-                ></Project>
+                ></Project> */}
             </ul>
         </div>
     );

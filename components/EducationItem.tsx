@@ -26,7 +26,7 @@ function EducationItem({
     shortDescription,
     longDescription,
     image,
-    location
+    location,
 }: EducationItemProps) {
     const [isOpen, setIsOpen] = useState(false);
     const contentRef = useRef<HTMLDivElement>(null);
@@ -56,9 +56,7 @@ function EducationItem({
                     <p className="italic">
                         {date?.start} - {date?.end}
                     </p>
-                    <p className="text-sm">
-                        {location}
-                    </p>
+                    <p className="text-sm">{location}</p>
                     <p className="">{shortDescription}</p>
                 </div>
                 <button

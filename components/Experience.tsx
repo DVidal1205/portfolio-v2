@@ -19,10 +19,75 @@ function Experience() {
             <ul className="grid auto-rows-fr grid-cols-1 gap-4">
                 <Position
                     title="Research Assistant"
+                    company="UCF Biomedical Sciences Laboratory"
+                    date={{
+                        start: "April 5, 2024",
+                        end: "December 8, 2024",
+                    }}
+                    description="With a professor of mine, I am working on a research project studying the efficiency of Machine Learning solutions for cancer detection and optimal treatment recognition trained off various data samples, such as RNA and DNA sequencing."
+                    tags={[
+                        "Research",
+                        "Logistics",
+                        "Machine Learning",
+                        "Data Analysis",
+                        "Project Management",
+                        "Teamwork",
+                    ]}
+                    contributions={[
+                        "Assisted in data collection and transformation using Python and statistics libraries.",
+                        "Researched Machine Learning solutions for cancer detection and optimal treatment identification.",
+                    ]}
+                ></Position>
+                <Position
+                    title="Symposium Team Leader"
+                    company="Burnett Honors College"
+                    date={{
+                        start: "April 5, 2024",
+                        end: "December 8, 2024",
+                    }}
+                    description="Being a Team Leader for the Burnett Honors College Symposium, I am responsible for leading a team of 15 students through what it means to be an Honors Student at UCF. I am also responsible for creating a semester-long curriculum and grading system for the students."
+                    tags={[
+                        "Leadership",
+                        "Mentorship",
+                        "Organization",
+                        "Teamwork",
+                        "Community",
+                        "Guidance",
+                    ]}
+                    contributions={[
+                        "Created a semester-long curriculum for the students to follow.",
+                        "Performed common tasks of a professor, such as grading and lecturing.",
+                        "Led a team of 15 students through the process of becoming an Honors Student at UCF.",
+                    ]}
+                ></Position>
+                <Position
+                    title="Honors Orientation Ambassador"
+                    company="Burnett Honors College"
+                    date={{
+                        start: "May 1, 2024",
+                        end: "July 9, 2024",
+                    }}
+                    description="As an Honors Orientation Ambassador, I serve as a role-model and mentor for incoming students to the Burnett Honors College at UCF, teaching them how to navigate the university and how to find a passion for learning at this wonderful institution."
+                    tags={[
+                        "Leadership",
+                        "Mentorship",
+                        "Organization",
+                        "Teamwork",
+                        "Community",
+                        "Guidance",
+                    ]}
+                    contributions={[
+                        "Worked alongside other ambassadors to create a welcoming environment for incoming students by planning activities and events.",
+                        "Led small groups of students throughout the orientation process, answering questions and providing guidance.",
+                        "Assisted in the scheduling and course registration process for incoming students.",
+                    ]}
+                ></Position>
+                <Position
+                    title="Research Assistant"
                     company="UCF Cognitive Sciences Laboratory"
                     date={{
                         start: "January 31, 2024",
-                        end: "Present",
+                        end: "March 31, 2024",
                     }}
                     description="Partnering with the Cognitive Sciences Laboratory at UCF, I am working on a research project studying the effectiveness of teamwork in various environments, with a focus in software development and data analysis."
                     tags={[
@@ -36,7 +101,7 @@ function Experience() {
                     contributions={[
                         "Curated a detailed approach to an experiment studying collaborative team science in software development and data analysis.",
                         "Organized a 40-person, 2-day hackathon for data collection to analyze effectiveness of teamwork in the development process studying what makes a successful team.",
-                        "Implemented tooling for data collection and event logistics, including a registration webpage and Discord bot.",
+                        "Spearheaded advertising the event to various Computer Science communities on campus.",
                     ]}
                 ></Position>
                 <Position
