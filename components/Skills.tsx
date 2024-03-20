@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import RotateCard from "./RotateCard";
 
 const skills = [
     { name: "C", svg: "/c.svg" },
@@ -37,21 +38,22 @@ function Skills() {
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 mt-6">
                 {skills.map((skill, index) => (
-                    <div
-                        key={index}
-                        className="relative flex justify-center items-center"
-                        onMouseEnter={() => setHoveredSkill(skill.name)}
-                        onMouseLeave={() => setHoveredSkill(null)}
-                    >
-                        <Image
-                            width={100}
-                            height={100}
-                            src={skill.svg}
-                            alt={skill.name}
-                            className="transition-transform duration-300 ease-in-out transform hover:scale-110"
-                        />
+                    <RotateCard key={index}>
                         <div
-                            className={`absolute inset-0 flex items-center justify-center 
+                            key={index}
+                            className="relative flex justify-center items-center"
+                            onMouseEnter={() => setHoveredSkill(skill.name)}
+                            onMouseLeave={() => setHoveredSkill(null)}
+                        >
+                            <Image
+                                width={100}
+                                height={100}
+                                src={skill.svg}
+                                alt={skill.name}
+                                className="transition-transform duration-300 ease-in-out transform hover:scale-110"
+                            />
+                            <div
+                                className={`absolute inset-0 flex items-center justify-center 
                          bg-gradient-to-tl from-purple-950 via-purple-800 to-violet-950 
                          bg-transparent backdrop-blur-xl mshadow-md drop-shadow-2xl 
                          border-2 border-violet-900 rounded-2xl 
@@ -62,12 +64,15 @@ function Skills() {
                                  : "opacity-0"
                          } 
                          cursor-default`}
-                        >
-                            {hoveredSkill === skill.name && (
-                                <span className="text-xl">{skill.name}</span>
-                            )}
+                            >
+                                {hoveredSkill === skill.name && (
+                                    <span className="text-xl">
+                                        {skill.name}
+                                    </span>
+                                )}
+                            </div>
                         </div>
-                    </div>
+                    </RotateCard>
                 ))}
             </div>
         </div>
