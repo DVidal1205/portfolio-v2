@@ -25,9 +25,9 @@ export default function RootLayout({
     return (
         <html lang="en">
             <Script
+                async
                 src="https://cloud.umami.is/script.js"
                 data-website-id="34db6362-d5b5-4e51-8937-dc4c7b7a5006"
-                strategy="lazyOnload"
             />
             <body>{children}</body>
             <Analytics />
