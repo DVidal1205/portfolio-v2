@@ -24,7 +24,7 @@ function Projects() {
                     longDescription={
                         "Lootcode is a gamefied rendition of interview-prep sites like Leetcode or Neetcode. After cramming coding problems for my own interviews, I was dissatisfied with the level of engagement the current solutions have, and thought to make something fun yet productive. Working with a team of 3 other developers for the KnightHacks Project Launch Program, we developed Lootcode over two months, creating our own codegrading pipeline, writing our own problems and cases, and ideating an entire fantasy world and storyline for maximum immersion. This project was so much fun, and I have learned a lot of DSA myself in developing it. We also plan on creating solution videos on a separate YouTube channel in the future to make the learning process even better."
                     }
-                    link={"https://www.lootcode.com"}
+                    link={"https://www.lootcode.dev"}
                     image={"/lootcode-final.png"}
                     tags={[
                         "React",
